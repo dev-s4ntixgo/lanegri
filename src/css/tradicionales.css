@@ -1,0 +1,283 @@
+body{
+    background-color: rgb(216, 211, 196);
+    font-family: 'Overlock', sans-serif;
+    color: rgb(143, 130, 117);
+    margin: 0;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.encabezado {
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 62, 37, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px;
+      border-radius: 12px;
+      margin: 40px;
+      height: 100px;
+      width: 90%;
+      overflow: visible;
+    z-index: 2;
+    }
+
+    .en-center {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      gap: 40px;
+    }
+
+     .en-center a {
+        text-decoration: none;
+    }
+
+    .en-center h1 {
+        color: #ffcc00;
+      font-family: 'Nerko One', sans-serif;
+      font-size: 100px;
+      width: 800px;
+      height: 100px;
+      left: 50%;
+      transform: translateX(15%);
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    .negri-container { 
+      position: absolute;
+      top: -55px;
+      left: 60%;
+      width: 220px; /* MÁS ANCHO para el texto */
+      text-align: center;
+      z-index: -2;
+    }
+
+    .negri-wrapper {
+      position: relative;
+      width: 140px;
+      height: 140px;
+      margin: 0 auto;
+      overflow: visible;
+    }
+    .negri-wrapper:hover {
+        transform: translateY(-40%);
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    .negri {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+    
+.marquee-container {
+    width: 98%;
+    height: 20%;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 62, 37, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    padding: 10px 0;
+    top: 22%;
+    height: 50px;
+    z-index: 2;
+    }
+
+    .marquee {
+      font-family: 'Coiny', cursive;
+      display: inline-block;
+      font-weight: bold;
+      white-space: nowrap;
+      animation: scroll-left 20s linear infinite;
+      font-size: 1.2rem;
+      color: #ffd000;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+   nav {
+    width: 600px;
+    position: relative;
+    top: 100px;
+    left: 33%;
+    padding: 10px;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 62, 37, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+
+    .navbar {
+        display: flex;
+      justify-content: center;
+      gap: 3rem;
+    }
+
+    .navbar a {
+        font-weight: bold;
+       color: rgb(196, 207, 216);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+
+    .navbar a.active {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+header {
+  background-color: #d2691e;
+  color: white;
+  padding: 80px;
+  text-align: center;
+  background-image: url('/src/recursos/fnd.png');
+  background-position: top; /* opcional */
+  background-size: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);;
+}
+
+header h1 a{
+    font-family: 'Nerko One', sans-serif;
+  color: #ffd000;
+  text-decoration: none;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+header p {
+    font-size: 40px;
+  color: rgba(89, 62, 37, 0.75);
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.intro {
+  padding: 30px;
+  text-align: center;
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 62, 37, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);;
+  background-position: center; /* opcional */
+  background-size: cover;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);;
+}   
+.intro h2 {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 50px;
+  color: #ffd000;
+  margin-bottom: 20px;
+}
+.intro p {
+  font-size: 20px;
+  color: rgb(82, 73, 65);
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.plato {
+  width: 280px;
+   -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(89, 62, 37, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.plato:hover {
+    transform: scale(1.05);
+}
+
+.plato h3 {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 24px;
+  color: #ffd000;
+  margin-bottom: 10px;
+}
+
+.plato p {
+  font-size: 16px;
+  color: rgb(216, 211, 196);
+}
+
+.plato img {
+  width: 100%;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+}
+
+.plato ul li {
+    font-size: 20px;
+    color: rgb(229, 255, 0);
+    margin: 5px 0;
+}
+
+button {
+  background: #fbca1f;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
